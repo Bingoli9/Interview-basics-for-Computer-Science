@@ -33,11 +33,11 @@ client发起请求--建立连接--server响应请求---发送消息--关闭连�
 
 （2）短连接，短连接对于服务器来说管理较为简单，存在的连接都是有用的连接，不需要额外的控制手段，web网站一般使用短连接，因为长连接对服务端来说会消耗一定资源，而像WEB网站这么频繁的成千上万甚至上亿客户端的连接用短连接会更省一些资源，如果用长连接，而且同时有成千上万的用户，如果每个用户都占用一个连接的，对资源消耗过大
 
-\11. tcp的keep-alive和http人Keep-alive
-（1） Tcp的keep-alive是j检查当前tcp是否存活，表现就是当一个连接在一段时间没有数据传输是，一方会发一个心跳包，果对方有回包则表明当前连接有效，继续监控。
-这个“一段时间”可以设置。
-WinHttp库的设置：
-WINHTTP_OPTION_WEB_SOCKET_KEEPALIVE_INTERVAL
-Sets the interval, in milliseconds, to send a keep-alive packet over the connection. The default interval is 30000 (30 seconds). The minimum interval is 15000 (15 seconds). Using WinHttpSetOption to set a value lower than 15000 will return with ERROR_INVALID_PARAMETER
+11. tcp的keep-alive和http人Keep-alive
+    （1） Tcp的keep-alive是j检查当前tcp是否存活，表现就是当一个连接在一段时间没有数据传输是，一方会发一个心跳包，果对方有回包则表明当前连接有效，继续监控。
+    这个“一段时间”可以设置。
+    WinHttp库的设置：
+    WINHTTP_OPTION_WEB_SOCKET_KEEPALIVE_INTERVAL
+    Sets the interval, in milliseconds, to send a keep-alive packet over the connection. The default interval is 30000 (30 seconds). The minimum interval is 15000 (15 seconds). Using WinHttpSetOption to set a value lower than 15000 will return with ERROR_INVALID_PARAMETER
 
-（2） http的Keep-alive是让一个tcp连接活久点。在浏览器设置
+    （2） http的Keep-alive是让一个tcp连接活久点。在浏览器设置
