@@ -265,3 +265,6 @@ vector基于数组，multiset, map, multimap基于红黑树，unordered_map/unor
 - static_cast是相当于C的强制类型转换，用起来可能有一点危险，不提供运行时的检查来确保转换的安全性。
 - dynamic_cast用于转换指针和和引用，不能用来转换对象 —— 主要用于类层次间的上行转换和下行转换，还可以用于类之间的交叉转换。在类层次间进行上行转换时，dynamic_cast和static_cast的效果是一样的；在进行下行转换时，dynamic_cast具有类型检查的功能，比static_cast更安全。在多态类型之间的转换主要使用dynamic_cast，因为类型提供了运行时信息。
 
+#### 哪些库函数属于高危函数
+
+#### 内存分配实现
