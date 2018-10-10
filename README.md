@@ -14,5 +14,5 @@ git push
 上述操作可以更新分支上的代码：  
 
 
-拉取远程master分支代码到本地并merge
+拉取远程master分支代码到本地并merge  
 git pull origin master
