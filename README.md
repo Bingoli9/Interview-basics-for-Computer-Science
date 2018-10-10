@@ -11,5 +11,8 @@ git checkout -b $(分支名) 切换分支
 git add.   
 git commit -m 'm'  
 git push  
-上述操作可以更新分支上但代码：  
+上述操作可以更新分支上的代码：  
 
+
+拉取远程master分支代码到本地并merge
+git pull origin master
