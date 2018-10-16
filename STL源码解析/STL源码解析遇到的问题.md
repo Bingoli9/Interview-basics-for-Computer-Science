@@ -25,7 +25,8 @@ template <typename T>
 ```
 
 ```c++
-//在这里，typename指出SubType是class T中定义的一个类别，因此ptr是一个指向T::SubType型别的指针。如果没有关键字typename，SubType会被当成一个static成员
+//在这里，typename指出SubType是class T中定义的一个类别，因此ptr是一个指向T::SubType型别的指针。  
+如果没有关键字typename，SubType会被当成一个static成员  
 template <class T>
 class MyClass{
     typename T::SubType * ptr;
