@@ -1,1 +1,9 @@
 #linux 相关知识
+https://www.cnblogs.com/baichuanhuihai/p/7931865.html  
+https://blog.csdn.net/smasegain/article/details/48261429  
+
+useradd  添加用户  
+groupadd 添加用户组  
+usermod 更改用户属性  
+setfacl 设置文件facl属性  
+getfacl 获取文件facl属性  
