@@ -1,1 +1,15 @@
 #linux 相关知识
+https://www.cnblogs.com/baichuanhuihai/p/7931865.html  
+https://blog.csdn.net/smasegain/article/details/48261429 
+https://www.cnblogs.com/manziluo/p/5789700.html  
+https://blog.csdn.net/thinkerleo1997/article/details/80415059  
+https://blog.csdn.net/ffscript/article/details/74450821  
+https://blog.csdn.net/weixin_37571125/article/details/77188431  
+https://blog.csdn.net/RUN32875094/article/details/79729289  
+https://blog.csdn.net/u012300744/article/details/80335055  
+https://blog.csdn.net/QcloudCommunity/article/details/79585699  
+useradd  添加用户  
+groupadd 添加用户组  
+usermod 更改用户属性  
+setfacl 设置文件facl属性  
+getfacl 获取文件facl属性  
