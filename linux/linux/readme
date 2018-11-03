@@ -1,4 +1,5 @@
 #linux 相关知识
+
 https://baike.baidu.com/item/sql注入/150289?fr=aladdin  
 https://baike.baidu.com/item/CSRF/2735433  
 https://baike.baidu.com/item/XSS攻击/954065?fr=aladdin  
@@ -67,7 +68,8 @@ https://blog.csdn.net/oktears/article/details/39610805
 https://blog.csdn.net/racaljk/article/details/78443023  
 https://blog.csdn.net/lsjseu/article/details/48792193  
 https://www.cnblogs.com/renrenbinbin/p/4465029.html  
-https://www.cnblogs.com/findumars/p/5180490.html  
+https://www.cnblogs.com/findumars/p/5180490.html 
+
 useradd  添加用户  
 groupadd 添加用户组  
 usermod 更改用户属性  
