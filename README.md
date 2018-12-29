@@ -26,9 +26,9 @@ git pull origin master
 
 ## 版本冲突
 冲突保留本地
-1.git stash
-2.git pull
-3.git stash pop
+1.git stash  
+2.git pull  
+3.git stash pop  
 ## git其他有用指令
 git status //查看当前代码状态，改动，所在分支，当前状态有没有代码冲突等  
 git branch -a //查看当前主干下有哪些分支  
@@ -37,6 +37,10 @@ git pull origin //更新当前指向的分支，当前分支与远程分支已�
 git diff //查看分支代码改动  
 git merge dev1  //合并最新分支到本地分支  
 git branch -D dev1 //删除本地分支dev1  
+
+## git回滚
+撤掉add git reset HEAD  
+撤掉commit git reset HEAD^  
 
 git fetch -all
 git reset --hard
