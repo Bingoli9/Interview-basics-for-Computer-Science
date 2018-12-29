@@ -24,6 +24,11 @@ git pull origin master
 2.git config user.name "someone"
 3.git config user.email "someone@someplace.com"
 
+## 版本冲突
+冲突保留本地
+1.git stash
+2.git pull
+3.git stash pop
 ## git其他有用指令
 git status //查看当前代码状态，改动，所在分支，当前状态有没有代码冲突等  
 git branch -a //查看当前主干下有哪些分支  
