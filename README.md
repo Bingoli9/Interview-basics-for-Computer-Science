@@ -38,6 +38,19 @@ git diff //查看分支代码改动
 git merge dev1  //合并最新分支到本地分支  
 git branch -D dev1 //删除本地分支dev1  
 
+## git merge
+git merge [branch1][branch2]  
+git merge [branch] 将branch合并到当前分支  
+
+## git pull
+git pull  = git fetch + git merge
+
+## git branch
+git branch [branch_name] 创建本地分支
+git push origin [branch_name] 创建远程分支
+git push origin :[branch_name] 删除远程分支
+git branch -d [branch_name] 删除本地分支
+
 ## git回滚
 撤掉add git reset HEAD  
 撤掉commit git reset HEAD^  
