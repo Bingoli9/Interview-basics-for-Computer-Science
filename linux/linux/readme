@@ -109,3 +109,5 @@ groupadd 添加用户组
 usermod 更改用户属性  
 setfacl 设置文件facl属性  
 getfacl 获取文件facl属性  
+
+https://code.woboq.org/userspace/glibc/malloc/malloc.c.html  
