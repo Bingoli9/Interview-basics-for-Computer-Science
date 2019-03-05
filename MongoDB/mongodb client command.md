@@ -24,6 +24,12 @@ db
 use $databaseName
 ```
 
+### create database
+
+```C++
+use $databaseName
+```
+
 ### login database
 
 ```C++

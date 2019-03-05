@@ -60,18 +60,6 @@ std::variant<Args...> tuple_index(size_t i, const std::tuple<Args...>& tpl) {
 
 ```
 
-
-
-Structured bindings
-
-
-
-
-
-
-
-
-
  #### Structured bindings
 
 Offering multiple return functionality
