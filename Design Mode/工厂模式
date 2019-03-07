@@ -1,0 +1,258 @@
+## 工厂模式
+
+1. 工厂接口，相当于造人工厂总部
+```C++
+class IHumanFactory
+{
+public:
+    IHumanFactory(void)
+    {
+    
+    }
+    ~IHumanFactory(void)
+    {
+    
+    }
+    virtual IHuman* CreateHuman() = 0;
+
+};
+```
+2. 造人各个的部门
+```C++
+class WhiteHumanFactory: public IHumanFactory
+{
+public:
+    WhiteHumanFactory(void)
+    {
+
+    }
+    ~WhiteHumanFactory(void)
+    {
+    
+    }
+    IHuman *CreateHuman()
+    {
+        return new WhiteHuman();
+    }
+
+};
+
+class YellowHumanFactory: public IHumanFactory
+{
+public:
+    YellowHumanFactory(void)
+    {
+
+    }
+    ~YellowHumanFactory(void)
+    {
+    
+    }
+    IHuman *CreateHuman()
+    {
+        return new YellowHuman();
+    }
+
+};
+
+class BlackHumanFactory: public IHumanFactory
+{
+public:
+    BlackHumanFactory(void)
+    {
+
+    }
+    ~BlackHumanFactory(void)
+    {
+    
+    }
+    IHuman *CreateHuman()
+    {
+        return new BlackHuman();
+    }
+
+};
+```
+
+3. 各种人的特征。
+
+```C++
+class IHuman
+{
+public:
+    IHuman(void)
+    {
+
+    }
+    ~IHuman()
+    {
+    
+    }
+    virtual void Laugh() = 0;
+    virtual void Cry() = 0;
+    virtual void Talk() = 0;
+
+};
+
+class WhiteHuman : public IHuman
+{
+public:
+    WhiteHuman(void)
+    {
+    
+    }
+    ~WhiteHuman(void)
+    {
+    
+    }
+    void Laugh()
+    {
+        std::cout << "白种人笑！" << std::endl;
+    }
+    void Cry()
+    {
+        std::cout << "白种人哭！" <<std::endl;
+    }
+    void Talk()
+    {
+        std::cout << "白种人说话！" <<std::endl;
+    }
+};
+
+class YellowHuman : public IHuman
+{
+public:
+    YellowHuman(void)
+    {
+    
+    }
+    ~YellowHuman(void)
+    {
+    
+    }
+    void Laugh()
+    {
+        std::cout << "黄种人笑！" << std::endl;
+    }
+    void Cry()
+    {
+        std::cout << "黄种人哭！" <<std::endl;
+    }
+    void Talk()
+    {
+        std::cout << "黄种人说话！" <<std::endl;
+    }
+};
+
+class BlackHuman : public IHuman
+{
+public:
+    BlackHuman(void)
+    {
+    
+    }
+    ~BlackHuman(void)
+    {
+    
+    }
+    void Laugh()
+    {
+        std::cout << "黑种人笑！" << std::endl;
+    }
+    void Cry()
+    {
+        std::cout << "黑种人哭！" <<std::endl;
+    }
+    void Talk()
+    {
+        std::cout << "黑种人说话！" <<std::endl;
+    }
+};
+```
+
+4. 主函数
+```C++
+int main()
+{
+    std::cout << "#1.制造黄种人"<<std::endl;
+    IHumanFactory *pHumanFactory = new YellowHumanFactory();
+    IHuman * pHuman = pHumanFactory->CreateHuman();
+    pHuman->Cry();
+    pHuman->Laugh();
+    pHuman->Talk();
+    delete pHuman;
+    delete pHumanFactory;
+
+    std::cout << "#1.制造白种人"<<std::endl;
+    IHumanFactory *pHumanFactory2 = new WhiteHumanFactory();
+    IHuman * pHuman2 = pHumanFactory->CreateHuman();
+    pHuman->Cry();
+    pHuman->Laugh();
+    pHuman->Talk();
+    delete pHuman2;
+    delete pHumanFactory2;
+
+    std::cout << "#1.制造黑种人"<<std::endl;
+    IHumanFactory *pHumanFactory3 = new BlackHumanFactory();
+    IHuman * pHuman3 = pHumanFactory->CreateHuman();
+    pHuman->Cry();
+    pHuman->Laugh();
+    pHuman->Talk();
+    delete pHuman3;
+    delete pHumanFactory3;
+
+    getchar();
+    return 0;
+
+    
+}
+```
+
+### 工厂模式好处
+
+工厂模式就相当于创建实例对象的new，我们经常要根据类Class生成实例对象，如A a=new A().  
+工厂模式也是用来创建实例对象的，可能多做一些工作，但会给你系统带来更大的可扩展性和尽量少的修改量。   
+类Sample为例,要创建Sample的实例对象:   
+Sample sample=new Sample();   
+可是，实际情况是，通常我们都要在创建sample实例时做点初始化的工作,比如赋值 查询数据库等   
+首先，我们想到的是，可以使用Sample的构造函数，这样生成实例就写成:   
+Sample sample=new Sample(参数);  
+但是，如果创建sample实例时所做的初始化工作不是象赋值这样简单的事，可能是很长一段代码，如果也写入构造函数中，那你的代码  
+很难看了 
+初 始化工作如果是很长一段代码，说明要做的工作很多，将很多工作装入一个方法中，相当于将很多鸡蛋放在一个篮子里，是很危险的，  
+这也是有背于Java面向对 象的原则，面向对象的封装(Encapsulation)和分派(Delegation)告诉我们，尽量将长的代码分派“切割”成每段，  
+将每段再“封装” 起来(减少段和段之间偶合联系性)，这样，就会将风险分散，以后如果需要修改，只要更改每段，不会再发生牵一动百的事情。   
+我们需要将创建实例的工作与使用实例的工作分开, 也就是说，让创建实例所需要的大量初始化工作从Sample的构造函数中分离出去。   
+你想如果有多个类似的类，我们就需要实例化出来多个类。这样代码管理起来就太复杂了。   
+这个时候你就可以采用工厂方法来封装这个问题。   
+不能再用上面简单new Sample(参数)。还有,如果Sample有个继承如MySample, 按照面向接口编程,我们需要将Sample抽象成一个接口.现在Sample是接口,  
+有两个子类MySample 和HisSample   
+Sample mysample=new MySample();   
+Sample hissample=new HisSample();   
+采用工厂封装：   
+
+```C++
+public class Factory{ 
+
+　　public static Sample creator(int which){ 
+
+　　//getClass 产生Sample 一般可使用动态类装载装入类。 
+　　if (which==1) 
+　　　　return new SampleA(); 
+　　else if (which==2) 
+　　　　return new SampleB(); 
+
+　　} 
+
+} 
+```
+
+那么在你的程序中,如果要实例化Sample时.就使用 
+Sample sampleA=Factory.creator(1); 
+举 个更实际的例子，比如你写了个应用，里面用到了数据库的封装，你的应用可以今后需要在不同的数据库环境下运行，  
+可能是oracle,db2,sql server等，那么连接数据库的代码是不一样的，你用传统的方法，就不得不进行代码修改来适应不同的环境，  
+非常麻烦，但是如果你采用工厂类的话，将各种 可能的数据库连接全部实现在工厂类里面，通过你配置文件的修改来达到连接的是不同的数据库，  
+那么你今后做迁移的时候代码就不用进行修改了。 
+我通常都是用xml的配置文件配置许多类型的数据库连接，非常的方便。PS：工厂模式在这方面的使用较多。
+
+

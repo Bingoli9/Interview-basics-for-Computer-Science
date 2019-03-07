@@ -7,6 +7,8 @@
 
 class StringUtil
 {
+	
+public:
 	StringUtil() = default;
 	~StringUtil() = default;
 	
@@ -17,7 +19,9 @@ class StringUtil
 		pos1 = 0;
 		while(std::string::npos != pos2)
 		{
-			v.push_back(s.substr(pos1, pos2-pos1));
+			if (pos2 != pos1) {
+				v.push_back(s.substr(pos1, pos2-pos1));	
+			}
 			
 			pos1 = pos2 + sep.size();
 			pos2 = s.find(sep, pos1);
