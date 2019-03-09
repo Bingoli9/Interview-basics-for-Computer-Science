@@ -7,7 +7,7 @@ using namespace std;;
 int main()
 {
 	StringUtil stringUtil;
-	string s = "hello   world";
+	string s = "hello world";
 	vector<string> v;
 	
 	stringUtil.strSplit(s, v, " ");
