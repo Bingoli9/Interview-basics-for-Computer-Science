@@ -18,4 +18,4 @@ In the final code, the relization relationship is expressed as inheriting abstra
 
 Example
 
-![uml_class_struct](C:\Users\USER\Desktop\仓库\interview\Interview-basics-for-Computer-Science\Design Mode\pics\uml_class_struct.jpg)
+![uml_class_struct](https://github.com/leekeiling/Interview-basics-for-Computer-Science/blob/master/pics/uml_class_struct.jpg?raw=true)
