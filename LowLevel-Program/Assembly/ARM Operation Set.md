@@ -37,8 +37,8 @@ example
  寄存器移位的前索引寻址
 
 ```C++
-　mov r2, #8
- str r1, [r0, r2, lsl #1]　　;将 r1 中的数据存储到地址为 r0 + (r2 << 1)的内存空间中
+mov r2, #8
+str r1, [r0, r2, lsl #1]　　;将 r1 中的数据存储到地址为 r0 + (r2 << 1)的内存空间中
 ```
 
  寄存器后索引寻址
@@ -104,3 +104,31 @@ LDM/STM \<cond\>
 | SWI     | SWI {\<cond\>} \<immed_24\> | software interrupt用于产生软中断 |
 | BKPT    |                             | 断点中断指令                     |
 
+#### 栈指令
+
+| Command | Description          |
+| ------- | -------------------- |
+| stmib   | 地址先增而后完成操作 |
+| stmia   | 完成操作而后地址递增 |
+| stmdb   | 地址先减而后完成操作 |
+| stmda   | 完成操作而后地址递减 |
+| stmfa   | 满递增堆栈           |
+| stmea   | 空递增堆栈           |
+| stmfd   | 满递减堆栈           |
+| stmed   | 空递减堆栈           |
+
+上述command用于压栈，以下用于出栈
+
+LDMIB、 LDMED
+
+LDMIA， LDMFD
+
+LDMDB， LDMEA
+
+LDMDA， LDMFA
+
+```C++
+stmdb sp!, {r0-r12, lr}
+```
+
+含义：sp = sp - 4，先压lr，sp = lr（即将lr中的内容放入sp所指的[内存地址](https://www.baidu.com/s?wd=%E5%86%85%E5%AD%98%E5%9C%B0%E5%9D%80&tn=24004469_oem_dg&rsv_dl=gh_pl_sl_csd)）。sp = sp - 4，再压r12，sp = r12。sp = sp - 4，再压r11，sp = r11......sp = sp - 4，最后压r0，sp = r0。 
