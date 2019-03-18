@@ -18,3 +18,4 @@ T __sync_val_compare_and_swap (T* __p, U __compVal, V __exchVal, ...);
 ### Return value
 
 The function returns the initial value of the variable that \__p points to.
+
