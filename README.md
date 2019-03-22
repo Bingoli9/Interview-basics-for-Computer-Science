@@ -3,7 +3,7 @@
 ## git 
 
 在仓库上创建分支之后，  
-git clone $(仓库地址)  
+git clone $(仓库地址)   
 或者 git pull  
 
 git branch -va 查看所有分支  
