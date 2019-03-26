@@ -1,0 +1,32 @@
+## Chromium 显示页面
+
+整体类图如下：
+
+<center>
+  <img src = "saf"/>
+</center>
+
+- RenderProcessHostImpl: 对应一个RenderProcess，他们之间通过ChannelProxy来通信，也就是说每一个RenderProcessHost控制着一个渲染进程。
+
+- SiteInstanceImpl: SiteInstanceImpl对象对应一个RenderProcessHost，同时SiteInstanceImpl对应着一个站点site_，也就是说来源于该站点的url会被分配到SiteInstanceImpl对应的RenderProcessHost中。同时它包含对象BrowsingInstance，它会决定url被分配到哪一个SiteInstanceImpl，也就是决定该url在哪一个渲染进程中进行渲染。
+
+- BrowsingInstance：包含着一个映射关系site_instance_map_，它决定url到SiteInstanceImp的对应关系，函数GetSiteInstanceForURL的作用是输入一个url，它会先计算该url属于哪一个site_，然后返回该site_对应的SiteInstanceImpl，如果该site_对应的SiteInstanceImpl还没有创建，则会进行创建并保存在site_instance_map_中。
+
+- FrameTree：目前chromium希望frame相关的逻辑从content模块的RenderView和RenderViewHost类中分离，放入一个新的RenderFame和RenderFrameHost类中。这些新的类会分配一个channel_id用于进程间通信。对于每个活动的Frame，它在当前进程中会有一个完整RenderFrame，并在其他进程中保存一个换出(swapped out)RenderFrame。
+
+- FrameTreeNode:FrameTree的节点结构，每一个FrameTreeNode都包含一个RenderFrameHostManager，RenderFrameHostManager包含RenderFrameHostImpl，就是FrameTreeNode通过RenderFrameHostManager对RenderFrameHostImpl进行操作。每一个WebContents都会维护一棵以FrameTreeNode为节点的FrameTree，与当前页面的frame树相对应，FrameTreeNode维护frame的相关信息，负责frame中的跨进程导航，并处理其他进程frame传递过来的消息。
+
+- RenderFrameHostimpl：与RenderViewHost类似，对应于一个其它进程中的RenderFame。
+
+- NavigationController接口：负责某一个标签页中的导航逻辑。其内部维护一个导航过
+
+  的NavigationEntry列表：也可以理解成用户操作的记录，用于处理前进、后退、刷新等操作。
+
+- NavigatorImpl：用于处理FrameTree某个节点上的Navigation，它会绑定在一棵FrameTree上，并且该棵的每一个节点都会包含这个NavigatorImpl的指针。
+
+- WebContants: 应于一个标签页，浏览器中打开的标签页都会对应一个WebContants。当用户点击浏览器上的添加按钮或者是从一个网页的一个连接来打开一个新的页面，这样一个新的页面就被创建了。一个WebContents对象对应于一个HTML页面和显示该页面的标签页，创建一个页面其实就是创建一个WebContents对象。
+
+
+
+
+
