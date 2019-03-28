@@ -1,5 +1,4 @@
 ## callback
-
 ```
 # Callback<> and Bind()
 
