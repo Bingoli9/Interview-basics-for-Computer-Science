@@ -2,7 +2,6 @@
 
 //src/base/task/post_task.h
 
-```C++
 This is the interface to post tasks.
 
 To post a simple one-off task with default traits:
@@ -54,4 +53,3 @@ valid. This is typically done during the initialization phase in each
 process. If your code is not running in that phase, you most likely don't
 have to worry about this. You will encounter DCHECKs or nullptr dereferences
 if this is violated. For tests, prefer base::test::ScopedTaskEnvironment.
-```
