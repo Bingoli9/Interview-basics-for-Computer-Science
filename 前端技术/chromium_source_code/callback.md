@@ -1,5 +1,5 @@
 ## callback
-```
+
 # Callback<> and Bind()
 
 ## Introduction
@@ -557,4 +557,4 @@ base::Bind(&Foo, _1, false); // _1 is a placeholder.
 
 If you are thinking of forward declaring `base::Callback` in your own header
 file, please include "base/callback_forward.h" instead.
-```
+
