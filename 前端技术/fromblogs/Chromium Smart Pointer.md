@@ -9,6 +9,7 @@ base/memory/
 #### How to select smart pointer
 
 - for unique owner. std::unique_ptr need to point to the object which is not reference count and allocated in heap
+- for unique owner and local use, better use scoped_ptr
 - for no owner. Use raw pointer or WeakPtr\<>. WeakPtr\<> can only be destructed by thread which created it. 
 - for reference count. Use scoped_refptr\<>
 
