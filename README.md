@@ -69,3 +69,10 @@ git rm -rf --cache $(文件名)
 </center>
 
 
+## 将本地branch分支追踪远程分支
+git branch --set-upstream branch-name origin/branch-name
+## 将当前分支追踪到远程分支
+git branch -u origin/serverfix
+## 查看本地分支和远程分支关系
+git branch -vv
+
