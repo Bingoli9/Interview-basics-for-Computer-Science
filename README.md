@@ -38,6 +38,9 @@ git diff //查看分支代码改动
 git merge dev1  //合并最新分支到本地分支  
 git branch -D dev1 //删除本地分支dev1  
 
+## git reflog
+重返未来某个版本，需要记住commit号  
+
 ## git merge
 git merge [branch1][branch2]  
 git merge [branch] 将branch合并到当前分支  
@@ -54,6 +57,13 @@ git branch -d [branch_name] 删除本地分支
 ## git回滚
 撤掉add git reset HEAD  
 撤掉commit git reset HEAD^  
+
+
+## HEAD
+HEAD代表当前版本  
+
+##  git reset --hard commitID
+回退到某个版本，甚至可以未来版本  
 
 git fetch -all
 git reset --hard
