@@ -86,3 +86,6 @@ git branch -u origin/serverfix
 ## 查看本地分支和远程分支关系
 git branch -vv
 
+## 合并本地分支
+git merge
+
