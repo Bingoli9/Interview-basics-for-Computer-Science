@@ -89,3 +89,13 @@ git branch -vv
 ## 合并本地分支
 git merge
 
+## git patch
+使用git diff打补丁
+
+git diff > patch //patch的命名是随意的，不加其他参数时作用是当我们希望将我们本仓库工作区的修改拷贝一份到其他机器上使用，但是修改的文件比较多，拷贝量比较大，此时我们可以将修改的代码做成补丁，之后在其他机器上对应目录下使用 git apply patch 将补丁打上即可 . 
+
+git diff --cached > patch //是将我们暂存区与版本库的差异做成补丁 . 
+
+git diff --HEAD > patch //是将工作区与版本库的差异做成补丁 . 
+
+git diff Testfile > patch//将单个文件做成一个单独的补丁
