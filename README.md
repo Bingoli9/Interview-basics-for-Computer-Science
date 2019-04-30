@@ -99,3 +99,6 @@ git diff --cached > patch //是将我们暂存区与版本库的差异做成补�
 git diff --HEAD > patch //是将工作区与版本库的差异做成补丁 . 
 
 git diff Testfile > patch//将单个文件做成一个单独的补丁
+
+## git merge diff
+git merge --no-ff，这样无论如何都会产生一个新的 merge commit。然后你 git show <merge-commit-sha1> 就可以看到这次 merge 的所有改动。  
