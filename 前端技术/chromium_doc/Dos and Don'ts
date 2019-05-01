@@ -1,0 +1,157 @@
+## Dos and Donts
+
+### Minimize Code in Headers
+
+- Don't include unneeded headers
+- Move helper/inner classes into the implementation
+you can forward declare classes inside a class:
+
+```C++
+class Whatever {
+    private:
+    struct DataStruct;
+    std::vector<DataStruct> data_;
+}
+```
+
+
+### Stop inline code in headers
+The compiler will optimize it;
+
+### Stop inlining complex methods
+
+
+### Stop inlining constructors and destructors
+
+
+### When you can inline constructors and destructors
+C++ has the concept of a trivial destructor. If your class has only POD types and does not explicitly declare a destruct, then the compiler will not borther to generate or run a destructor
+
+It's OK
+```C++
+struct Data {
+    Data() : count_one(0), count_two(0) {}
+    //the members must all the POD for this trick to work
+    
+    int count_one;
+    int count_two;
+}
+```
+
+For abstract base classes with no members, it's safe to define the destructor inline:
+
+class Interface {
+    public:
+    virtural ~Interface() {}
+
+    virtual void DoSomething(int parameter) = 0;
+    virtual int GetAValue() = 0;
+}
+
+
+
+
+
+#### Be careful about your accessors
+Not all accessors are light weight.
+It's not ok
+```C++
+class Foo {
+    public:
+    int count() const { return my_data_;  }
+
+    private:
+    MyData my_data_;
+}
+```
+
+#### Static variables
+Dynamic initialization of function-scope static variables is thread-safe in Chromium.
+
+#### Variable initialization
+- Use assignment syntax when performing "simple" initialization with one or more literal values composed into the object:
+```C++
+int i = 1;
+std::string s = "Hello";
+std::pair<bool, double> p = {true, 2.0};
+std::vector<std::string> v = {"one", "two", "three"};
+```
+Using '=' here is no less efficient than "()"(the compiler won't generate a temp + copy), and ensures that only implicit constructors are called, so readers seeing this syntax can assume nothing complex or subtle is happening. Note that "{}" are allowed on the right side of the '=' here
+'
+- Use constructor syntax when construction performs significant logic, uses an explicit construct way is intuitively simple to the reader:
+
+```C++
+Myclass c(1.7, false, "test");
+std::vector<double> v(500, 0.97);
+```
+
+- Use C++11 "uniform init" syntax({} without =) only wehn neighter of the above work;
+
+
+
+#### Prefer structs over pairs/tuples when used repeatedly
+The Google style guide recommends using return values over outparams. For functions which return multiple values covenient way to do this is to return a pair or tuple:
+
+```C++
+std::pair<int, int> GetPaddingValues() {
+    ...
+    return {1, 2};
+}
+```
+However, this return type can be cumbersome, opaque, and error-prone. An alternative is to define a struct with named fields:
+
+```C++
+struct PaddingValues {
+  int header;
+  int footer;
+};
+PaddingValues GetPaddingValues() {
+  ...
+  return {1, 2};  // This abbreviated syntax still works!
+}
+```
+
+#### use std::make_unique and base::MakeRefCounted instead of bare new
+
+
+
+
+#### Do not use auto to deduce a raw pointer
+Auto using is encouraged when it improves readability. However, do not use auto when the type would be deduced to a pointer type. This can cause confusion. Instead, prefer specifying the pointer part outside of auto:
+
+
+```C++
+auto item = new Item(); //BAD: auto deduces to Item*, type of |item| is Item*
+auto* item = new Item(); //GOOD: auto deduces to Item, type of |item| is Item*
+```
+
+#### Use const correctly
+For safety and simplicity, don;t return pointers or references to non-const objects from const methods. Within that constraint, mark methods as const where possible. Avoid const_cast to remove const, except when implementing non-const getters in terms of const getters.
+
+
+#### Prefer to use =default
+
+
+#### Comment style
+```C++
+// FooImpl implements the FooBase class.
+// FooFunction() modifies |foo_member_|.
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
