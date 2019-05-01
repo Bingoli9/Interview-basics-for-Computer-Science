@@ -100,5 +100,51 @@ git diff --HEAD > patch //是将工作区与版本库的差异做成补丁 .
 
 git diff Testfile > patch//将单个文件做成一个单独的补丁
 
+
+## git cherry-pick
+
+挑拣提交，它会获取某个分支的单笔提交，并作为一个新的提交引入到你当前分支上。当我们需要在本地何如其他分支的提交时，如果不想对整个分支进行合并，而是志向将某一次提交合入到当前分支上，那么就要使用git cherry-pick
+
+```C++
+git cherry-pick
+
+--quit 退出当前cherry-pick序列
+--continue 继续当前的cherry-pick序列
+--abort 取消当前cherry-pick序列，恢复当前分支
+-n 不自动提交
+-e 编辑提交信息
+```
+
+## git tag
+
+常用于版本发布
+
+```C++
+git tag #在控制台打印当前仓库所有标签
+```
+
+git标签分为两种类型：轻量标签和附注标签。轻量标签是指向对象的引用，附注标签则是仓库中的一个独立对象。建议使用附注标签
+
+
+
+```C++
+git tag v0.1.2-light #创建轻量标签
+git tage -a v0.1.2 -m '0.1.2版本'  #创建附注标签
+git tag -a v0.0.1 9fbc3d0  #补打标签
+git checkout v.1.2 #切换到标签
+git tag -d v0.1.2 #删除标签
+git push origin v0.1.2	 #将标签提交到git 服务器
+```
+
+
+
+## git origin
+
+origin指向远端代码仓库
+
+如果远程仓库是dev，那么git push origin dev可以将本地仓库的修改push到远程服务器
+
+
+
 ## git merge diff
 git merge --no-ff，这样无论如何都会产生一个新的 merge commit。然后你 git show <merge-commit-sha1> 就可以看到这次 merge 的所有改动。  
