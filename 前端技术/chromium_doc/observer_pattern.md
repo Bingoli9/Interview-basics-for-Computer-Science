@@ -14,4 +14,27 @@ FOR_EACH_OBSERVER(ObserverType, observer_list, func)
 ```
 
 
+#### 通过观察者模式写测试代码
+
+```c++
+class DownloadItemCreateObserver : public DownloadManager::Observer {
+
+public:
+explict DownloadItemCreateObserver(DownloadManager* manager)
+: manager_(manager) {
+    manager->AddObserver(this);
+}
+
+~DownLoadItemCreteateObserver() override {
+    if (manager_) 
+        manager_ -> RemoveObserver(this);
+}
+}
+```
+
+
+
+
+
+
 
