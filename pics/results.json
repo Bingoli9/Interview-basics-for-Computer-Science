@@ -1,0 +1,3534 @@
+{
+  "files": {
+    "2": "/home/huangzefeng/ttwebview/src/tools/perf/https_news_sina_cn_from_wap02019-05-14_16-09-45.html", 
+    "3": "/home/huangzefeng/ttwebview/src/tools/perf/after_https_news_sina_cn_from_wap12019-05-14_16-09-45.html"
+  }, 
+  "format_version": "0.2", 
+  "summary_values": [
+    {
+      "units": "minutes", 
+      "important": true, 
+      "type": "scalar", 
+      "name": "benchmark_duration", 
+      "value": 0.8515000144640604
+    }
+  ], 
+  "per_page_values": [
+    {
+      "name": "trace", 
+      "type": "trace", 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "important": false, 
+      "file_id": 2, 
+      "units": "", 
+      "tir_label": "foreground", 
+      "page_id": 0
+    }, 
+    {
+      "name": "memory:webview:browser_process:process_count_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of browser processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:process_count_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 136556420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 136556420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 136556420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 136556420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:blink_gc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2097152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of blink_gc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:cc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 79642224, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of cc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:discardable:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of discardable in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:dom_storage:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 50748, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of dom_storage in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:font_caches:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 27948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of font_caches in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:gpu:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4390644, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of gpu in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:java_heap:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 34716692, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of java_heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:leveldatabase:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of leveldatabase in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:leveldb:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of leveldb in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:malloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 27740080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of malloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:net:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 490533, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of net in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:partition_alloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1869887.9999999995, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of partition_alloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:shared_memory:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 139264, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of shared_memory in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:skia:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 5149884, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of skia in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:sqlite:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 50392, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of sqlite in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:tracing:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 32008288, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of tracing in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_by_malloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 16384, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of objects allocated by malloc for v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:code_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1473568, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:code_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:large_object_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 32768, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:large_object_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:map_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 322844, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:map_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:new_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 71236, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:new_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:old_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2686736, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:old_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4587152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4603536, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:web_cache:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 715796, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of web_cache in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 161684781, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total effective size reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:blink_gc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2097152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of blink_gc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:cc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 79642224, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of cc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:discardable:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of discardable in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:dom_storage:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 50748, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of dom_storage in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:font_caches:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 27948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of font_caches in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:gpu:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4390644, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of gpu in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:java_heap:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 34716692, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of java_heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:leveldatabase:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of leveldatabase in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:leveldb:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of leveldb in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:malloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 27740080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of malloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:net:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 490533, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of net in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:partition_alloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1869887.9999999995, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of partition_alloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:shared_memory:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 139264, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of shared_memory in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:skia:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 5149884, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of skia in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:sqlite:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 50392, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of sqlite in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:tracing:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 32008288, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of tracing in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_by_malloc:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 16384, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of objects allocated by malloc for v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:code_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1473568, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:code_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:large_object_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 32768, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:large_object_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:map_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 322844, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:map_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:new_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 71236, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:new_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:old_space:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2686736, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:old_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4587152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4603536, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:web_cache:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 715796, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "effective size of web_cache in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:effective_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 161684781, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total effective size reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:blink_gc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 667904, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by blink_gc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:java_heap:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 21871088, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by java_heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:malloc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 60691424, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by malloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:partition_alloc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1868335, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by partition_alloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:code_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1270848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:code_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:large_object_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 416, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:large_object_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:map_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 199452, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:map_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:new_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 37956, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:new_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:old_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2513176, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:old_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4021848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4021848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 89120599, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total size of all allocated objects reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:blink_gc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 667904, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by blink_gc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:java_heap:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 21871088, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by java_heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:malloc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 60691424, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by malloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:partition_alloc:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1868335, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by partition_alloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:code_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1270848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:code_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:large_object_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 416, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:large_object_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:map_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 199452, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:map_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:new_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 37956, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:new_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:old_space:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 2513176, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:old_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4021848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4021848, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:allocated_objects_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 89120599, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total size of all allocated objects reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:cc:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 965652, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "locked (pinned) size of cc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:discardable:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 5160960, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "locked (pinned) size of discardable in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 6126612, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total locked (pinned) size reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:cc:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 965652, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "locked (pinned) size of cc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:discardable:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 5160960, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "locked (pinned) size of discardable in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:locked_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 6126612, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total locked (pinned) size reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_by_malloc:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "peak size of objects allocated by malloc for v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "peak size of v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total peak size reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_by_malloc:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "peak size of objects allocated by malloc for v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "peak size of v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:peak_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total peak size reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:java_heap:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 12662784, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the Java heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:ashmem:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1374208, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of ashmem in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:native_heap:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 30885764, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the native heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:stack:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 704512, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the thread stacks in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 112758660, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:gl:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the gl Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:graphics:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 51118080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the graphics Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:other:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the other Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 51118080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of GPU memory (Android memtrack) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 163876740, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:java_heap:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 12662784, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the Java heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:ashmem:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1374208, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of ashmem in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:native_heap:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 30885764, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the native heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:stack:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 704512, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the thread stacks in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 112758660, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:gl:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the gl Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:graphics:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 51118080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the graphics Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:other:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the other Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 51118080, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of GPU memory (Android memtrack) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:proportional_resident_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 163876740, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:java_heap:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4882432, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the Java heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:ashmem:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 987136, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of ashmem in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:native_heap:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 29921156, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the native heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:stack:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 704512, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the thread stacks in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 49618820, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total private dirty size of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 49618820, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total private dirty size reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:java_heap:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 4882432, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the Java heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:ashmem:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 987136, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of ashmem in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:native_heap:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 29921156, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the native heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:stack:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 704512, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "private dirty size of the thread stacks in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 49618820, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total private dirty size of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:private_dirty_size_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 49618820, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total private dirty size reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of all memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:background_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of background memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:light_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of light memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:detailed_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of detailed memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:heap_profiler_avg", 
+      "page_id": 0, 
+      "grouping_keys": {
+        "phase": "foreground"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "foreground", 
+      "type": "scalar", 
+      "description": "total number of heap profiler memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "trace", 
+      "type": "trace", 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "important": false, 
+      "file_id": 3, 
+      "units": "", 
+      "tir_label": "background", 
+      "page_id": 1
+    }, 
+    {
+      "name": "memory:webview:browser_process:process_count_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of browser processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:process_count_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 118304524, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 118304524, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 118304524, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 118304524, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total resident set size (RSS) reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:blink_gc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2097152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of blink_gc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:dom_storage:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 50748, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of dom_storage in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:font_caches:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27996, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of font_caches in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:java_heap:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27753792, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of java_heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:leveldatabase:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of leveldatabase in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:leveldb:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of leveldb in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:malloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 25967964, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of malloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:net:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 490581, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of net in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:partition_alloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1319587.9999999998, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of partition_alloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:shared_memory:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 139264, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of shared_memory in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:skia:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of skia in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:sqlite:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 50392, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of sqlite in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:tracing:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 32008408, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of tracing in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_by_malloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 16384, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of objects allocated by malloc for v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:code_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1473568, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:code_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:large_object_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 32768, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:large_object_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:map_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 322844, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:map_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:new_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33280, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:new_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:old_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1022028, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:old_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2884488, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2900872, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 60798349, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total effective size reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:blink_gc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2097152, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of blink_gc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:dom_storage:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 50748, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of dom_storage in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:font_caches:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27996, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of font_caches in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:java_heap:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27753792, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of java_heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:leveldatabase:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of leveldatabase in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:leveldb:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of leveldb in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:malloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 25967964, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of malloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:net:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 490581, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of net in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:partition_alloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1319587.9999999998, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of partition_alloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:shared_memory:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 139264, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of shared_memory in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:skia:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of skia in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:sqlite:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 50392, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of sqlite in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:tracing:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 32008408, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of tracing in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_by_malloc:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 16384, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of objects allocated by malloc for v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:code_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1473568, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:code_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:large_object_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 32768, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:large_object_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:map_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 322844, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:map_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:new_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33280, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:new_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:old_space:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1022028, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap:old_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2884488, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8:heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2900872, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "effective size of v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:effective_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 60798349, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total effective size reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:blink_gc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 99304, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by blink_gc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:java_heap:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 20840000, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by java_heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:malloc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 58093896, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by malloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:partition_alloc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 410336, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by partition_alloc in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:code_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1205824, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:code_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:large_object_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 416, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:large_object_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:map_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 23276, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:map_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:new_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:new_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:old_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 937432, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:old_space in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:heap:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2166948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2166948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 81610484, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total size of all allocated objects reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:blink_gc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 99304, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by blink_gc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:java_heap:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 20840000, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by java_heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:malloc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 58093896, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by malloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:partition_alloc:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 410336, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by partition_alloc in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:code_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1205824, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:code_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:large_object_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 416, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:large_object_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:map_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 23276, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:map_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:new_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:new_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:old_space:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 937432, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap:old_space in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:heap:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2166948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8:heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 2166948, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "size of all objects allocated by v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:allocated_objects_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 81610484, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total size of all allocated objects reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:allocated_by_malloc:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "peak size of objects allocated by malloc for v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:v8:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "peak size of v8 in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_chrome:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total peak size reported by Chrome for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:allocated_by_malloc:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "peak size of objects allocated by malloc for v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:v8:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "peak size of v8 in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_chrome:peak_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 4808396, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total peak size reported by Chrome for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:java_heap:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 9463808, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the Java heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:ashmem:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 141312, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of ashmem in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:native_heap:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27377420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the native heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:stack:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 708608, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the thread stacks in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 94298892, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:gl:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the gl Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:graphics:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the graphics Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:other:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the other Android memtrack component in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:gpu_memory:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of GPU memory (Android memtrack) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 94298892, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:java_heap:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 9463808, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the Java heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:ashmem:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 141312, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of ashmem in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:native_heap:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 27377420, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the native heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:stack:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 708608, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the thread stacks in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 94298892, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:gl:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the gl Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:graphics:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the graphics Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:other:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "proportional resident size (PSS) of the other Android memtrack component in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:gpu_memory:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) of GPU memory (Android memtrack) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:proportional_resident_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 94298892, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total proportional resident size (PSS) reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:java_heap:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1683456, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the Java heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:ashmem:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 20480, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of ashmem in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:native_heap:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 26414860, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the native heap in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:stack:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 708608, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the thread stacks in the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:system_memory:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33296140, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total private dirty size of system memory (RAM) used by the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:browser_process:reported_by_os:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33296140, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total private dirty size reported by the OS for the browser process in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:java_heap:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1683456, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the Java heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:ashmem:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 20480, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of ashmem in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:native_heap:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 26414860, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the native heap in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:stack:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 708608, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "private dirty size of the thread stacks in all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:system_memory:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33296140, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total private dirty size of system memory (RAM) used by all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:reported_by_os:private_dirty_size_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 33296140, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "sizeInBytes", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total private dirty size reported by the OS for all processes in WebView"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of all memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:background_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of background memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:light_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of light memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:detailed_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 1, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of detailed memory dumps added by WebView to the trace"
+    }, 
+    {
+      "name": "memory:webview:all_processes:dump_count:heap_profiler_avg", 
+      "page_id": 1, 
+      "grouping_keys": {
+        "phase": "background"
+      }, 
+      "value": 0, 
+      "improvement_direction": "down", 
+      "important": false, 
+      "units": "count", 
+      "tir_label": "background", 
+      "type": "scalar", 
+      "description": "total number of heap profiler memory dumps added by WebView to the trace"
+    }
+  ], 
+  "benchmark_metadata": {
+    "rerun_options": [], 
+    "type": "telemetry_benchmark", 
+    "name": "memory.top_10_mobile", 
+    "description": "Measure foreground/background memory on top 10 mobile page set.\n\n  This metric provides memory measurements for the System Health Plan of\n  Chrome on Android.\n  "
+  }, 
+  "pages": {
+    "0": {
+      "url": "https://news.sina.cn/?from=wap", 
+      "id": 0, 
+      "name": "https_news_sina_cn_from_wap"
+    }, 
+    "1": {
+      "url": "about:blank", 
+      "id": 1, 
+      "name": "after_https_news_sina_cn_from_wap"
+    }
+  }, 
+  "next_version": "0.3", 
+  "benchmark_name": "memory.top_10_mobile"
+}
