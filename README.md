@@ -151,3 +151,9 @@ git merge --no-ff，这样无论如何都会产生一个新的 merge commit。�
     
 ## git checkout origin/master
 从远程仓库检索出代码
+
+## 撤销commit，且不撤销工作区代码改动
+git reset --soft HEAD^
+
+    <img src="https://img-blog.csdn.net/20171209154436088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ2FpYmlhbjA4MjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"/>
+    <img src="https://img-blog.csdn.net/20171209154436088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ2FpYmlhbjA4MjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"/
