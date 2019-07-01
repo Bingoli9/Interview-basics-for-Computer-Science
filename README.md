@@ -155,5 +155,18 @@ git merge --no-ff，这样无论如何都会产生一个新的 merge commit。�
 ## 撤销commit，且不撤销工作区代码改动
 git reset --soft HEAD^
 
-    <img src="https://img-blog.csdn.net/20171209154436088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ2FpYmlhbjA4MjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"/>
-    <img src="https://img-blog.csdn.net/20171209154436088?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvZ2FpYmlhbjA4MjM=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast"/
+## checkout
+git branch \<branch\> \<startpoint\>  
+以某个commit创建分之  
+
+git checkout --datch <branch>  
+换到分支的游离状态，默认以该分支下的最后一次提交ID  
+
+git checkout --orphan <branch>  
+分支新建一个赤裸裸的分支，没有任何的提交历史  
+
+git checkout --merge <branch>  
+用于在切换分支的时候，将当前分支修改的内容一起打包带走，同步到切换的分支下  
+
+git checkout -p <branch>  
+这个命令主要用来比较两个分支间的差异内容，并提供交互式的界面来选择进一步的操作  
