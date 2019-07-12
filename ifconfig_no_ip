@@ -1,0 +1,3 @@
+sudo dhclient ens33
+sudo ifconfig ens33
+sudo systemctl restart network-manager.service

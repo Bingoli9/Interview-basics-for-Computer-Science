@@ -7,11 +7,13 @@
 
 - put * and & by the type rather than the variable name
 
-- When you derive from a base class, group any overriding functions in your header file in one labeled section. Use the override specifier on all these functions
+- When you derive from a base class, group any overriding functions in your header file in one labeled section.  
+Use the override specifier on all these functions
 
 - Prefer (foo == 0) to (0 == foo)
 
-- Prefer putting delegate classes in their own header files. Implementors of the delegate interface will often be included elsewhere, which will often cause more coupling with the header of the main class.
+- Prefer putting delegate classes in their own header files. Implementors of the delegate interface will often be  
+included elsewhere, which will often cause more coupling with the header of the main class.
 
 - Dont use else after return. So use:
 ```C++
@@ -26,9 +28,11 @@ return 2;
 
 
 #### Exporting symbols
-When building shared libraries and DLLs, we need to indicate which functions and classes should be visible outside of the library, and which should only be visible inside the library
+When building shared libraries and DLLs, we need to indicate which functions and classes should be visible outside of the   
+library, and which should only be visible inside the library
 
-Symbols can be exported by annotation with a \<COMPONEMT>_EXPORT macro name. Class annotations should be precede the class name;
+Symbols can be exported by annotation with a \<COMPONEMT>_EXPORT macro name. Class annotations should be precede the   
+class name;
 
 
 
@@ -42,7 +46,8 @@ class FOO_EXPORT Foo {
 
 
 #### Multiple inheritance
-Multiple inheritance and virtual inheritance are permitted in chromium code, but discourage. Consider whether composition could solve the problem instead.
+Multiple inheritance and virtual inheritance are permitted in chromium code, but discourage. Consider whether  
+composition could solve the problem instead.
 
 
 #### Logging
@@ -68,13 +73,15 @@ Multiple inheritance and virtual inheritance are permitted in chromium code, but
 
 
 #### Forward declarations vs. #includes
-Unlike the Google style guide, Chromium style prefers forward declarations to #includes where possible. This can reduce compile times and result in fewer files needing recompilation when a header changes.
+Unlike the Google style guide, Chromium style prefers forward declarations to #includes where possible.   
+This can reduce compile times and result in fewer files needing recompilation when a header changes.
 
 
 
 #### CHECK() DCHECK() NOTREACHED()
 
-The CHECK() macro will cause an immediate crash if its condition is not met. DCHECK() is like CHECK() but only compiled in when DCHECK_IS_ON is ture.
+The CHECK() macro will cause an immediate crash if its condition is not met. DCHECK() is like CHECK() but only   
+compiled in when DCHECK_IS_ON is ture.
 
 
 - Use DCHECK() or NOTREACHED() as assertings,
@@ -83,20 +90,24 @@ The CHECK() macro will cause an immediate crash if its condition is not met. DCH
 
 - Use CHECK() if the consequence of a failed assertion would be a security vulnerability
 
-- You can temporarily use CHECK() instead of DCHECK() when trying to force crashes in release builds to sniff out which of your assertions is failing.
+- You can temporarily use CHECK() instead of DCHECK() when trying to force crashes in release builds to sniff  
+out which of your assertions is failing.
 
 - Don't use these macros in tests, as they crash the test binary and leave bots in a bad state. 
 
 #### Object ownership and calling conventions
-when functions need to take raw or smart pointers as parameters, use the following conventions. Here we refer to the parameter type as T and name as t.
+when functions need to take raw or smart pointers as parameters, use the following conventions. Here we refer to the   
+parameter type as T and name as t.
 
-- if the function does not modified t's ownership, declare the param as T*. The caller is expected to ensure t stays alive as long as necessary, generally through the duration of the call. 
+- if the function does not modified t's ownership, declare the param as T*. The caller is expected to ensure t stays  
+alive as long as necessary, generally through the duration of the call. 
 
 - if the function takes the ownership of a non-refcounted object, declare the param as std::unique_ptr\<T>
 
 - if the function takes a ref on a refcounted object, declare the param as scoped_refptr\<T>
 
-- in short, functions should never take owenership of parameters passes as raw pointers, and there should rarely be a need to pass smart pointers by const ref.
+- in short, functions should never take owenership of parameters passes as raw pointers, and there should rarely  
+be a need to pass smart pointers by const ref.
 
 - Return raw pointers if-and-only-if the caller does not take ownership
 - Return std::unique_ptr\<T> or scoped_refprt\<T> by value when the impl is handing off ownership.
@@ -105,22 +116,38 @@ when functions need to take raw or smart pointers as parameters, use the followi
 
 
 ####vTypes
-- Use size_t for object and allocation sizes, object counts, array and pointer offsets, vector indices, and so on. The signed types are incorrect and unsafe for these purposes (e.g. integer overflow behavior for signed types is undefined in the C and C++ standards, while the behavior is defined for unsigned types). The C++ STL and libc are good guides here: they use size_t and foo::size_type for very good reasons.
+- Use size_t for object and allocation sizes, object counts, array and pointer offsets, vector indices, and so on.  
+The signed types are incorrect and unsafe for these purposes (e.g. integer overflow behavior for signed types is  
+undefined in the C and C++ standards, while the behavior is defined for unsigned types). The C++ STL and libc are  
+good guides here: they use size_t and foo::size_type for very good reasons.
 
 - Use size_t directly in preference to std::string::size_type and similar.
 
-- Occasionally classes may have a good reason to use a type other than size_t for one of these concepts, e.g. as a storage space optimization. In these cases, continue to use size_t in public-facing function declarations, and continue to use unsigned types internally (e.g. uint32_t).
+- Occasionally classes may have a good reason to use a type other than size_t for one of these concepts,   
+e.g. as a storage space optimization. In these cases, continue to use size_t in public-facing function declarations,  
+and continue to use unsigned types internally (e.g. uint32_t).
 
-- Be aware that size_t (object sizes and indices), off_t (file offsets), ptrdiff_t (the difference between two pointer values), intptr_t (an integer type large enough to hold the value of a pointer), uint32_t, uint64_t, and so on are not necessarily the same. Use the right type for your purpose. CheckedNumeric is an ergonomic way to perform safe arithmetic and casting with and between these different types.
+- Be aware that size_t (object sizes and indices), off_t (file offsets), ptrdiff_t (the difference between two   
+pointer values), intptr_t (an integer type large enough to hold the value of a pointer), uint32_t, uint64_t, and   
+so on are not necessarily the same. Use the right type for your purpose. CheckedNumeric is an ergonomic way to   
+perform safe arithmetic and casting with and between these different types.
 
-- Follow Google C++ casting conventions to convert arithmetic types when you know the conversion is safe. Use checked_cast<T> (from base/numerics/safe_conversions.h) when you need to CHECK that the source value is in range for the destination type. Use saturated_cast<T> if you instead wish to clamp out-of-range values.
+- Follow Google C++ casting conventions to convert arithmetic types when you know the conversion is safe. Use   
+checked_cast<T> (from base/numerics/safe_conversions.h) when you need to CHECK that the source value is in range  
+for the destination type. Use saturated_cast<T> if you instead wish to clamp out-of-range values.
 
-- Do not use unsigned types to mean “this value should never be < 0”. For that, use assertions or run-time checks (as appropriate).
+- Do not use unsigned types to mean “this value should never be < 0”. For that, use assertions or run-time checks  
+(as appropriate).
 
-- In cases where the exact size of the type matters (e.g. a 32-bit pixel value, a bitmask, or a counter that has to be a particular width), use one of the sized types from <stdint.h>, e.g. uint32_t.
+- In cases where the exact size of the type matters (e.g. a 32-bit pixel value, a bitmask, or a counter that has to be  
+a particular width), use one of the sized types from <stdint.h>, e.g. uint32_t.
 
-- When passing values across network or process boundaries, use explicitly-sized types for safety, since the sending and receiving ends may not have been compiled with the same sizes for things like int and size_t. However, to the greatest degree possible, avoid letting these sized types bleed through the APIs of the layers in question.
+- When passing values across network or process boundaries, use explicitly-sized types for safety, since the sending   
+and receiving ends may not have been compiled with the same sizes for things like int and size_t. However, to the   
+greatest degree possible, avoid letting these sized types bleed through the APIs of the layers in question.
 
-- Don't use std::wstring. Use base::string16 or base::FilePath instead. (Windows-specific code interfacing with system APIs using wstring and wchar_t can still use string16 and char16; it is safe to assume that these are equivalent to the “wide” types.)
+- Don't use std::wstring. Use base::string16 or base::FilePath instead. (Windows-specific code interfacing with  
+system APIs using wstring and wchar_t can still use string16 and char16; it is safe to assume that these are   
+equivalent to the “wide” types.)
 
 
