@@ -4,7 +4,7 @@
 
 MRUCacheStandardMap: 内部声明的标准std::map类型的模板  
 
-MRUCacheBase：最为MRU缓存基类  
+MRUCacheBase：最近最少使用MRU缓存基类  
 
 template \<class KeyType, class PayloadType, class DeletorType, tmplate \<typename, typename> class MapType = MRUCacheStandardMap> class MRUCacheBase;  
 
@@ -16,7 +16,7 @@ template \<class KeyType, class PayloadType, class DeletorType, tmplate \<typena
 - 提供Get操作：获取指定的Key内容，若获取失败则返回end();成功则调整内部列表将找到的key移动到列表表首并返回该key的内容迭代器；调整列表使用slice方法，可以会有效率问题。
 - 提供erase操作
 - ShrinkToSize
-- Clear：晴空cache操作
+- Clear：清空cache操作
 - 提供begin，end，rbegin，rend迭代器操作
 
 #### MRUCacheNullDeletor
