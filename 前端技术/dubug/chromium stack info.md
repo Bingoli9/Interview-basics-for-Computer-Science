@@ -1,5 +1,11 @@
 ## chromium stack info
 
+```
+gn args out/component
+
+```
+
+
 #### c 层调用堆栈
 
 ```C++

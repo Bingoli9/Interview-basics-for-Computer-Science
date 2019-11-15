@@ -1,0 +1,7 @@
+## inc and dec
+inc 加一  
+dec 减一  
+```c++
+inc a = add a ,1
+dec a = sub a, 1
+```

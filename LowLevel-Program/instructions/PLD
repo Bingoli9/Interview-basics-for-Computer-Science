@@ -1,0 +1,10 @@
+## PLD
+PLD = preload 预读取指令  
+pld指令可以提示ARM预先把cache line填充好。  
+pld指令的offset一般为64byte的倍数  
+```c++
+pld[Rn,{offset}]
+其中：
+- Rn 存储器的基址寄存器
+- Offset 加在Rn上的偏移量
+```
