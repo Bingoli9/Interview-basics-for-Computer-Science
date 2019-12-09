@@ -14,22 +14,7 @@ Using the source code of the GCC compiler with the -g parameter allows the gener
 
 ### nm
 
-Use the nm command to list the symbol table in the binary file, including symbol addresses, symbol types, symbol names, and so on, to help locate where a segment error occurred.
-
-ldd
-
-ldd
-
-
-
-
-
-
-
-ldd
-
-
-
+Use the nm command to list the symbol table in the binary file, including symbol addresses, symbol types, symbol names, and so on, to help locate where a segment error occurred
 
 
 ### ldd
