@@ -2,12 +2,6 @@
 
 转自：http://www.alloyteam.com/2015/09/explore-performance/comment-page-1/
 
-<center>
-  @<img src = "2015/09/072455NuJ.png"/>
-</center>
-
-
-
 ```C++
 // 获取 performance 数据
 var performance = {  

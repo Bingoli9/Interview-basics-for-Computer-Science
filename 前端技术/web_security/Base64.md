@@ -2,19 +2,6 @@
 
 Base64是基于64个可打印字符来表示二进制数据的表示方法，从本质上看是base64编码。
 
-例如 "man" 用base64编码
-
-<center>
-  @<img src = "20130921153822859"/>
-</center>
-
-Base64编码表如下：
-
-<center>
- @ <img src = "20130921153826093"/>
-</center>
-
-
 
 #### chromium中的base64
 
