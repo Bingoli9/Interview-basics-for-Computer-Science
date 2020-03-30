@@ -2,10 +2,7 @@
 
 ## 第一阶段（发送请求）
 ### WebContents
-代表页面实体  
-WebContents对象对应一个NavigationController对象  
-
-首先创建WebContents，然后再创建NavigationController对象并关联  
+ 
 ### NavigationController
 NavigationController对象URL的前进/后退列表，负责加载URL到WebContents中  
 
